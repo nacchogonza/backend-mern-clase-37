@@ -70,7 +70,7 @@ const getProductsController = async () => {
 
 const getProductController = async (id) => {
   try {
-    const product = await findProducts(id);
+    const product = await findProduct(id);
     return product;
   } catch (error) {
     logger.log(
